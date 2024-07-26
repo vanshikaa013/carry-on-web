@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s all ease-in-out;
+}
+.main-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  align-items:end ;
+
+}
+.navigation{
+    width: 14%;
+    height: 100vh;
+    background-color: rgb(36, 1, 36);
+    padding-block: 30px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    z-index: 10;
+
+}
+.navigation img{
+    width: 80%;
+    margin-bottom: 50px;
+    padding-inline: 20px;
+}
+.navigation .btn-sec{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.btn-sec button{
+    padding-block: 30px;
+    background-color: rgb(36, 1, 36);
+    border: none;
+    font-size: 16px;
+    text-align: start;
+    padding-left: 40px;
+    color: rgb(108, 55, 108);
+}
+
+.btn-sec button:first-child:hover{
+    background-color: rgba(128, 0, 128, 0.829);
+    color: rgb(255, 208, 0);
+    
+}
+.btn-sec button:nth-child(2):hover{
+    background-color: rgb(188, 23, 160);
+    color:rgb(255, 208, 0);
+}
+.btn-sec button:nth-child(3):hover{
+    background-color: rgb(178, 6, 98);
+    color: rgb(255, 208, 0);
+}
+.btn-sec button:nth-child(4):hover{
+    background-color: rgb(199, 8, 78);
+    color: rgb(255, 208, 0);
+}
+.btn-sec button:nth-child(5):hover{
+    background-color: rgb(223, 13, 125);
+    color: rgb(255, 208, 0);
+}
+
+.navigation .icons{
+    height: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-inline: 30px;
+    color: white;
+    font-size: 18px;
+    padding-top: 70px;
+}
+
+/* navigation */
+
+.home-page{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./assets/Carry-On-Web-Home-Victoria-Bright.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: blue;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* padding-left: 100px; */
+}
+.box-home-page{
+    height: 50%;
+    width: 90%;
+    background-color: rgba(163, 163, 19, 0);
+    display: flex;
+    justify-content:center ;
+    padding-left: 20%;
+    background-attachment:fixed;
+    flex-direction: column;
+}
+.box-home-page h1{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 10rem;
+}
+.box-home-page a{
+    color: rgb(255, 221, 0);
+    font-family: "Montserrat", sans-serif;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* homepage */
+
+.container-1{
+    height: auto;
+    width:86%;
+    padding-block: 60px;
+    background-color: white;
+    padding-inline: 20px;
+}
+.container-1 h1{
+    color: rgb(122, 5, 122);
+    font-size: 100px;
+    font-family: "Rubik", sans-serif;
+    padding-left: 30px;
+    font-weight: 800;
+}
+.container-1 h2{
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: rgb(122, 5, 122);
+    padding-left: 30px;
+}
+
+.grid-sec{
+    /* height: 1000vh; */
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    display: grid;
+    gap: 2px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.grid-box{
+    height: 110vh;
+    padding: 30px;
+}
+.grid-box:first-child{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgba(242,242,242,255);
+
+}
+.grid-box:nth-child(2){
+    grid-column: 2/3;
+    grid-template-rows: 1/2;
+    background-color: rgba(249,249,249,255);
+}
+.grid-box:nth-child(3){
+    grid-column: 1/2;
+    grid-template-rows: 2/3;
+    background-color:rgba(242,242,242,255);
+
+}
+.grid-box:nth-child(4){
+    grid-column: 2/3;
+    grid-template-rows: 2/3;
+    background-color: rgba(249,249,249,255);
+
+}
+.grid-box:nth-child(5){
+    grid-column: 1/2;
+    background-color: rgba(242,242,242,255);
+    grid-template-rows: 3/4;
+
+}
+.grid-box:nth-child(6){
+    grid-column: 2/3;
+    grid-template-rows: 3/4;
+    background-color: rgba(249,249,249,255);
+
+}
+.grid-box:nth-child(7){
+    grid-column: 1/2;
+    grid-template-rows: 4/5;
+
+    background-color:rgba(242,242,242,255);
+}
+.grid-box:nth-child(8){
+    grid-column: 2/3;
+    grid-template-rows: 4/5;
+    background-color: rgba(249,249,249,255);
+
+}
+
+.grid-box .image{
+    height: 50%;
+    width: 100%;
+}
+.grid-box .image img{
+    height: 100%;
+    width: 100%;
+}
+.grid-box .text{
+    height: 50%;
+    width: 100%;
+    padding-block: 30px;
+}
+.text h3{
+    font-size: 28px;
+    margin-bottom: 4rem;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.text h3:hover{
+    color: rgb(7, 197, 7);
+}
+.text p{
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 30px;
+    font-family: "Rubik", sans-serif;
+    line-height: 30px;
+}
+.container-1 p{
+    font-family: "Rubik", sans-serif;
+    line-height: 35px;
+}
+.container-1 p span{
+    color: rgb(255, 200, 0);
+}
+
+.container-1 a{
+    line-height: 80px;
+    padding-left: 35rem;
+    color: rgb(255, 200, 0);
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* .container-1 */
+
+
+.container-2{
+    height: 230vh;
+    width: 86%;
+    background-image: url(./assets/container2\ img\ background.\ crop\ jpg.jpg);
+    background-position:right;
+    background-position-x: right;
+    
+    /* background-size: cover; */
+}
+.container-2 .content{
+    background-color: rgba(249,249,249,255);;
+    height: 100%;
+    width: 60%;
+    padding-left: 80px;
+    padding-bottom: 50px;
+}
+.container-2 h1{
+    color: rgb(122, 5, 69);
+    font-size: 100px;
+    font-family: "Rubik", sans-serif;
+    /* padding-left: 30px; */
+    font-weight: 800;
+}
+.container-2 h2{
+    font-size: 38px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    /* color: rgb(122, 5, 122); */
+}
+.container-2 .grid-sec-2{
+    height: auto;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(7,1fr);
+    display: grid;
+    padding-block: 100px;
+    gap: 10px;
+}
+.container-2 a{
+    line-height: 80px;
+    padding-left: 16rem;
+    color: rgb(255, 187, 0);
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+/* container-2 */
+.container-3-page{
+    height: auto;
+    background-color: rgba(47, 1, 47, 0.958) ;
+    width: 86%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom:10rem ;
+}
+.container-3{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container-3 .written-sec{
+    height: auto;
+    width: 60%;
+    padding-inline: 80px;
+    padding-block: 50px;
+
+}
+.written-sec h1{
+    color: rgb(248, 20, 107);
+    font-size: 120px;
+    font-weight: 800;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 50px;
+}
+.written-sec p{
+    color: rgb(159, 156, 156);
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+.written-sec button{
+    color: rgb(255, 221, 0);
+    height: 30px;
+    padding-inline: 10px;
+    width: auto;
+    background-color:rgb(248, 20, 107) ;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+}
+.written-sec button:hover{
+    background-color: rgba(47, 1, 47, 0.958) ;
+}
+.container-3 .image-sec-1{
+    /* height: 100vh; */
+    width: 40%;
+}
+.image-sec-1 img{
+    width: 100%;
+    height: 100%;
+}
+.container-3 .image-sec-2{
+    height: 100v;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.container-3-page a{
+    color: rgba(255, 200, 0, 0.874);
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* container-3 */
+
+.container-4{
+    height: auto;
+    width: 86%;
+    display: flex;
+    background-color: rgba(249,249,249,255);
+
+}
+.container-4 .input-sec{
+    width: 60%;
+    height: auto;
+    padding: 60px;
+    background-color:rgba(242,242,242,255);
+}
+.input-sec h1{
+    color: rgb(248, 20, 107);
+    font-size: 100px;
+    font-weight: 800;
+    font-family: "Rubik", sans-serif;
+}
+.input-sec h2{
+    font-size: 38px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: rgb(36, 16, 54);
+    margin-bottom: 40px;
+}
+.input-sec p{
+    font-family: "Rubik", sans-serif;
+    line-height: 30px;
+    color: rgb(83, 82, 82);
+    margin-bottom: 30px;
+}
+.input-sec input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 0.5px solid rgb(215, 213, 213);
+    padding-inline: 20px;
+    color: rgb(200, 198, 198);
+}
+.input-sec input:last-child{
+    height: 180px;
+
+}
+.container-4 button{
+    color: rgba(255, 200, 0, 0.874);
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    height: 40px;
+    padding-inline: 20px;
+    border: 1px solid rgba(255, 200, 0, 0.874);
+    background-color: transparent;
+}
+.container-4 .img-sec{
+    width: 40%;
+    height: auto;
+    background-image: url(./assets/last\ img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* container-4 */
+
+.footer-sec{
+    height:auto;
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgb(36, 1, 36);
+    font-family: "Rubik", sans-serif;
+}
+.footer-sec span{
+    width: 30%;
+    height: auto;
+    display: flex;
+    color: rgb(179, 176, 176);
+    justify-content: space-between ;
+    font-size: 14px;
+}
+.footer-sec span a{
+    color: white;
+    text-decoration: none;
+}
+.footer-sec span a:hover{
+    color: rgb(255, 166, 0);
+}
+.footer-sec .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    font-size: 40px;
+}
